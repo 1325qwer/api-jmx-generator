@@ -1,0 +1,854 @@
+{
+	"info": {
+		"_postman_id": "fc1d537e-c534-4f85-8e6c-50a8687be759",
+		"name": "haier2",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "12330469"
+	},
+	"item": [
+		{
+			"name": "首页 Copy",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "content-type",
+						"value": "application/json;charset=UTF-8"
+					},
+					{
+						"key": "accept",
+						"value": "application/json, text/plain, */*"
+					},
+					{
+						"key": "authorization",
+						"value": "Bearer 591678b12489112f9e0cafa62041ffcd"
+					},
+					{
+						"key": "app-info",
+						"value": "{\"ppmjVersion\":\"1.0.0\",\"platform\":\"toutiao\",\"requestId\":\"4481fae5cd5fe5fdcadd828387bde384\",\"deviceInfo\":\"{\\\"system\\\":\\\"iOS 15\\\",\\\"brand\\\":\\\"iPhone\\\",\\\"model\\\":\\\"iPhone 15 Pro\\\",\\\"version\\\":\\\"6.6.3\\\",\\\"SDKVersion\\\":\\\"3.46.0\\\",\\\"appName\\\":\\\"\\\"}\"}"
+					},
+					{
+						"key": "maappid",
+						"value": "ttf82e8e93671aa01301"
+					},
+					{
+						"key": "page-path",
+						"value": "pages/homepage/index"
+					},
+					{
+						"key": "user-agent",
+						"value": "Mozilla/5.0 (iPhone; CPU iPhone OS 15 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.0.3 Mobile/15E148 Safari/604.1 BytedanceWebview/d8a21c6 Aweme/15.9.0 Mobile ToutiaoMicroApp/2.8.0.12 @byted/miniprogram-ide"
+					},
+					{
+						"key": "referer",
+						"value": "https://tmaservice.developer.toutiao.com/?appid=ttf82e8e93671aa01301&version=1.0.0"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://haier-dy-api.paopaomj.com.cn/index/dy-index-list?maAppId=ttf82e8e93671aa01301",
+					"protocol": "https",
+					"host": [
+						"haier-dy-api",
+						"paopaomj",
+						"com",
+						"cn"
+					],
+					"path": [
+						"index",
+						"dy-index-list"
+					],
+					"query": [
+						{
+							"key": "maAppId",
+							"value": "ttf82e8e93671aa01301"
+						}
+					]
+				},
+				"description": "Generated from cURL: curl 'https://haier-dy-api.paopaomj.com.cn/index/dy-index-list?maAppId=ttf82e8e93671aa01301' \\\r\n  -H 'content-type: application/json;charset=UTF-8' \\\r\n  -H 'accept: application/json, text/plain, */*' \\\r\n  -H 'authorization: Bearer 591678b12489112f9e0cafa62041ffcd' \\\r\n  -H 'app-info: {\"ppmjVersion\":\"1.0.0\",\"platform\":\"toutiao\",\"requestId\":\"4481fae5cd5fe5fdcadd828387bde384\",\"deviceInfo\":\"{\\\"system\\\":\\\"iOS 15\\\",\\\"brand\\\":\\\"iPhone\\\",\\\"model\\\":\\\"iPhone 15 Pro\\\",\\\"version\\\":\\\"6.6.3\\\",\\\"SDKVersion\\\":\\\"3.46.0\\\",\\\"appName\\\":\\\"\\\"}\"}' \\\r\n  -H 'maappid: ttf82e8e93671aa01301' \\\r\n  -H 'page-path: pages/homepage/index' \\\r\n  -H 'user-agent: Mozilla/5.0 (iPhone; CPU iPhone OS 15 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.0.3 Mobile/15E148 Safari/604.1 BytedanceWebview/d8a21c6 Aweme/15.9.0 Mobile ToutiaoMicroApp/2.8.0.12 @byted/miniprogram-ide' \\\r\n  -H 'referer: https://tmaservice.developer.toutiao.com/?appid=ttf82e8e93671aa01301&version=1.0.0' \\\r\n  --data-raw '{}' \\\r\n  --compressed"
+			},
+			"response": []
+		},
+		{
+			"name": "抢购 Copy",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "content-type",
+						"value": "application/json;charset=UTF-8"
+					},
+					{
+						"key": "accept",
+						"value": "application/json, text/plain, */*"
+					},
+					{
+						"key": "authorization",
+						"value": "Bearer 591678b12489112f9e0cafa62041ffcd"
+					},
+					{
+						"key": "app-info",
+						"value": "{\"ppmjVersion\":\"1.0.0\",\"platform\":\"toutiao\",\"requestId\":\"274e3e2f079d5edc485055b37e5ac06f\",\"deviceInfo\":\"{\\\"system\\\":\\\"iOS 15\\\",\\\"brand\\\":\\\"iPhone\\\",\\\"model\\\":\\\"iPhone 15 Pro\\\",\\\"version\\\":\\\"6.6.3\\\",\\\"SDKVersion\\\":\\\"3.46.0\\\",\\\"appName\\\":\\\"\\\"}\"}"
+					},
+					{
+						"key": "maappid",
+						"value": "ttf82e8e93671aa01301"
+					},
+					{
+						"key": "page-path",
+						"value": "packageF/pages/product/detail"
+					},
+					{
+						"key": "user-agent",
+						"value": "Mozilla/5.0 (iPhone; CPU iPhone OS 13_2_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.0.3 Mobile/15E148 Safari/604.1 BytedanceWebview/d8a21c6 Aweme/15.9.0 Mobile ToutiaoMicroApp/2.8.0.12 @byted/miniprogram-ide"
+					},
+					{
+						"key": "referer",
+						"value": "https://tmaservice.developer.toutiao.com/?appid=ttf82e8e93671aa01301&version=1.0.0"
+					}
+				],
+				"url": {
+					"raw": "https://haier-dy-api.paopaomj.com.cn/product/dy-detail?productIds=7475167938127972402&maAppId=ttf82e8e93671aa01301",
+					"protocol": "https",
+					"host": [
+						"haier-dy-api",
+						"paopaomj",
+						"com",
+						"cn"
+					],
+					"path": [
+						"product",
+						"dy-detail"
+					],
+					"query": [
+						{
+							"key": "productIds",
+							"value": "7475167938127972402"
+						},
+						{
+							"key": "maAppId",
+							"value": "ttf82e8e93671aa01301"
+						}
+					]
+				},
+				"description": "Generated from cURL: curl 'https://haier-dy-api.paopaomj.com.cn/product/dy-detail?productIds=7475167938127972402&maAppId=ttf82e8e93671aa01301' \\\r\n  -H 'content-type: application/json;charset=UTF-8' \\\r\n  -H 'accept: application/json, text/plain, */*' \\\r\n  -H 'authorization: Bearer 591678b12489112f9e0cafa62041ffcd' \\\r\n  -H 'app-info: {\"ppmjVersion\":\"1.0.0\",\"platform\":\"toutiao\",\"requestId\":\"274e3e2f079d5edc485055b37e5ac06f\",\"deviceInfo\":\"{\\\"system\\\":\\\"iOS 15\\\",\\\"brand\\\":\\\"iPhone\\\",\\\"model\\\":\\\"iPhone 15 Pro\\\",\\\"version\\\":\\\"6.6.3\\\",\\\"SDKVersion\\\":\\\"3.46.0\\\",\\\"appName\\\":\\\"\\\"}\"}' \\\r\n  -H 'maappid: ttf82e8e93671aa01301' \\\r\n  -H 'page-path: packageF/pages/product/detail' \\\r\n  -H 'user-agent: Mozilla/5.0 (iPhone; CPU iPhone OS 13_2_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.0.3 Mobile/15E148 Safari/604.1 BytedanceWebview/d8a21c6 Aweme/15.9.0 Mobile ToutiaoMicroApp/2.8.0.12 @byted/miniprogram-ide' \\\r\n  -H 'referer: https://tmaservice.developer.toutiao.com/?appid=ttf82e8e93671aa01301&version=1.0.0' \\\r\n  --compressed"
+			},
+			"response": []
+		},
+		{
+			"name": "更多优惠 Copy",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "content-type",
+						"value": "application/json;charset=UTF-8"
+					},
+					{
+						"key": "accept",
+						"value": "application/json, text/plain, */*"
+					},
+					{
+						"key": "authorization",
+						"value": "Bearer 9c2541b1f9c9f18fd55d5ed9e7ef1b66"
+					},
+					{
+						"key": "app-info",
+						"value": "{\"ppmjVersion\":\"1.0.0\",\"platform\":\"toutiao\",\"requestId\":\"bbe4621d4f9c6ae9afd8640f7e5afe20\",\"deviceInfo\":\"{\\\"system\\\":\\\"iOS 15\\\",\\\"brand\\\":\\\"iPhone\\\",\\\"model\\\":\\\"iPhone 15 Pro\\\",\\\"version\\\":\\\"6.6.3\\\",\\\"SDKVersion\\\":\\\"3.46.0\\\",\\\"appName\\\":\\\"\\\"}\"}"
+					},
+					{
+						"key": "maappid",
+						"value": "ttf82e8e93671aa01301"
+					},
+					{
+						"key": "page-path",
+						"value": "packageA/pages/product/index"
+					},
+					{
+						"key": "user-agent",
+						"value": "Mozilla/5.0 (iPhone; CPU iPhone OS 13_2_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.0.3 Mobile/15E148 Safari/604.1 BytedanceWebview/d8a21c6 Aweme/15.9.0 Mobile ToutiaoMicroApp/2.8.0.12 @byted/miniprogram-ide"
+					},
+					{
+						"key": "referer",
+						"value": "https://tmaservice.developer.toutiao.com/?appid=ttf82e8e93671aa01301&version=1.0.0"
+					}
+				],
+				"url": {
+					"raw": "https://haier-dy-api.paopaomj.com.cn/product/dy-list?page=1&per-page=10&maAppId=ttf82e8e93671aa01301",
+					"protocol": "https",
+					"host": [
+						"haier-dy-api",
+						"paopaomj",
+						"com",
+						"cn"
+					],
+					"path": [
+						"product",
+						"dy-list"
+					],
+					"query": [
+						{
+							"key": "page",
+							"value": "1"
+						},
+						{
+							"key": "per-page",
+							"value": "10"
+						},
+						{
+							"key": "maAppId",
+							"value": "ttf82e8e93671aa01301"
+						}
+					]
+				},
+				"description": "Generated from cURL: curl 'https://haier-dy-api.paopaomj.com.cn/product/dy-list?page=1&per-page=10&maAppId=ttf82e8e93671aa01301' \\\r\n  -H 'content-type: application/json;charset=UTF-8' \\\r\n  -H 'accept: application/json, text/plain, */*' \\\r\n  -H 'authorization: Bearer 9c2541b1f9c9f18fd55d5ed9e7ef1b66' \\\r\n  -H 'app-info: {\"ppmjVersion\":\"1.0.0\",\"platform\":\"toutiao\",\"requestId\":\"bbe4621d4f9c6ae9afd8640f7e5afe20\",\"deviceInfo\":\"{\\\"system\\\":\\\"iOS 15\\\",\\\"brand\\\":\\\"iPhone\\\",\\\"model\\\":\\\"iPhone 15 Pro\\\",\\\"version\\\":\\\"6.6.3\\\",\\\"SDKVersion\\\":\\\"3.46.0\\\",\\\"appName\\\":\\\"\\\"}\"}' \\\r\n  -H 'maappid: ttf82e8e93671aa01301' \\\r\n  -H 'page-path: packageA/pages/product/index' \\\r\n  -H 'user-agent: Mozilla/5.0 (iPhone; CPU iPhone OS 13_2_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.0.3 Mobile/15E148 Safari/604.1 BytedanceWebview/d8a21c6 Aweme/15.9.0 Mobile ToutiaoMicroApp/2.8.0.12 @byted/miniprogram-ide' \\\r\n  -H 'referer: https://tmaservice.developer.toutiao.com/?appid=ttf82e8e93671aa01301&version=1.0.0' \\\r\n  --compressed"
+			},
+			"response": []
+		},
+		{
+			"name": "获取用户信息 Copy",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "content-type",
+						"value": "application/json;charset=UTF-8"
+					},
+					{
+						"key": "accept",
+						"value": "application/json, text/plain, */*"
+					},
+					{
+						"key": "authorization",
+						"value": "Bearer f70d0b2f0297021ccbe0f861da9d7db6"
+					},
+					{
+						"key": "app-info",
+						"value": "{\"ppmjVersion\":\"1.0.0\",\"platform\":\"toutiao\",\"requestId\":\"45a448f8c712933f18777536ce51600c\",\"deviceInfo\":\"{\\\"system\\\":\\\"iOS 15\\\",\\\"brand\\\":\\\"iPhone\\\",\\\"model\\\":\\\"iPhone 15 Pro\\\",\\\"version\\\":\\\"6.6.3\\\",\\\"SDKVersion\\\":\\\"3.46.0\\\",\\\"appName\\\":\\\"\\\"}\"}"
+					},
+					{
+						"key": "maappid",
+						"value": "ttf82e8e93671aa01301"
+					},
+					{
+						"key": "page-path",
+						"value": "pages/centerpage/index"
+					},
+					{
+						"key": "user-agent",
+						"value": "Mozilla/5.0 (iPhone; CPU iPhone OS 13_2_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.0.3 Mobile/15E148 Safari/604.1 BytedanceWebview/d8a21c6 Aweme/15.9.0 Mobile ToutiaoMicroApp/2.8.0.12 @byted/miniprogram-ide"
+					},
+					{
+						"key": "referer",
+						"value": "https://tmaservice.developer.toutiao.com/?appid=ttf82e8e93671aa01301&version=1.0.0"
+					}
+				],
+				"url": {
+					"raw": "https://haier-dy-api.paopaomj.com.cn/user/info?maAppId=ttf82e8e93671aa01301",
+					"protocol": "https",
+					"host": [
+						"haier-dy-api",
+						"paopaomj",
+						"com",
+						"cn"
+					],
+					"path": [
+						"user",
+						"info"
+					],
+					"query": [
+						{
+							"key": "maAppId",
+							"value": "ttf82e8e93671aa01301"
+						}
+					]
+				},
+				"description": "Generated from cURL: curl 'https://haier-dy-api.paopaomj.com.cn/user/info?maAppId=ttf82e8e93671aa01301' \\\r\n  -H 'content-type: application/json;charset=UTF-8' \\\r\n  -H 'accept: application/json, text/plain, */*' \\\r\n  -H 'authorization: Bearer f70d0b2f0297021ccbe0f861da9d7db6' \\\r\n  -H 'app-info: {\"ppmjVersion\":\"1.0.0\",\"platform\":\"toutiao\",\"requestId\":\"45a448f8c712933f18777536ce51600c\",\"deviceInfo\":\"{\\\"system\\\":\\\"iOS 15\\\",\\\"brand\\\":\\\"iPhone\\\",\\\"model\\\":\\\"iPhone 15 Pro\\\",\\\"version\\\":\\\"6.6.3\\\",\\\"SDKVersion\\\":\\\"3.46.0\\\",\\\"appName\\\":\\\"\\\"}\"}' \\\r\n  -H 'maappid: ttf82e8e93671aa01301' \\\r\n  -H 'page-path: pages/centerpage/index' \\\r\n  -H 'user-agent: Mozilla/5.0 (iPhone; CPU iPhone OS 13_2_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.0.3 Mobile/15E148 Safari/604.1 BytedanceWebview/d8a21c6 Aweme/15.9.0 Mobile ToutiaoMicroApp/2.8.0.12 @byted/miniprogram-ide' \\\r\n  -H 'referer: https://tmaservice.developer.toutiao.com/?appid=ttf82e8e93671aa01301&version=1.0.0' \\\r\n  --compressed"
+			},
+			"response": []
+		},
+		{
+			"name": "小程序资质 Copy",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "content-type",
+						"value": "application/json;charset=UTF-8"
+					},
+					{
+						"key": "accept",
+						"value": "application/json, text/plain, */*"
+					},
+					{
+						"key": "authorization",
+						"value": "Bearer f70d0b2f0297021ccbe0f861da9d7db6"
+					},
+					{
+						"key": "app-info",
+						"value": "{\"ppmjVersion\":\"1.0.0\",\"platform\":\"toutiao\",\"requestId\":\"5c5bdd16f39d3995a79a3cfe5f73db5d\",\"deviceInfo\":\"{\\\"system\\\":\\\"iOS 15\\\",\\\"brand\\\":\\\"iPhone\\\",\\\"model\\\":\\\"iPhone 15 Pro\\\",\\\"version\\\":\\\"6.6.3\\\",\\\"SDKVersion\\\":\\\"3.46.0\\\",\\\"appName\\\":\\\"\\\"}\"}"
+					},
+					{
+						"key": "maappid",
+						"value": "ttf82e8e93671aa01301"
+					},
+					{
+						"key": "page-path",
+						"value": "pages/centerpage/index"
+					},
+					{
+						"key": "user-agent",
+						"value": "Mozilla/5.0 (iPhone; CPU iPhone OS 13_2_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.0.3 Mobile/15E148 Safari/604.1 BytedanceWebview/d8a21c6 Aweme/15.9.0 Mobile ToutiaoMicroApp/2.8.0.12 @byted/miniprogram-ide"
+					},
+					{
+						"key": "referer",
+						"value": "https://tmaservice.developer.toutiao.com/?appid=ttf82e8e93671aa01301&version=1.0.0"
+					}
+				],
+				"url": {
+					"raw": "https://haier-dy-api.paopaomj.com.cn/user/certification?maAppId=ttf82e8e93671aa01301",
+					"protocol": "https",
+					"host": [
+						"haier-dy-api",
+						"paopaomj",
+						"com",
+						"cn"
+					],
+					"path": [
+						"user",
+						"certification"
+					],
+					"query": [
+						{
+							"key": "maAppId",
+							"value": "ttf82e8e93671aa01301"
+						}
+					]
+				},
+				"description": "Generated from cURL: curl 'https://haier-dy-api.paopaomj.com.cn/user/certification?maAppId=ttf82e8e93671aa01301' \\\r\n  -H 'content-type: application/json;charset=UTF-8' \\\r\n  -H 'accept: application/json, text/plain, */*' \\\r\n  -H 'authorization: Bearer f70d0b2f0297021ccbe0f861da9d7db6' \\\r\n  -H 'app-info: {\"ppmjVersion\":\"1.0.0\",\"platform\":\"toutiao\",\"requestId\":\"5c5bdd16f39d3995a79a3cfe5f73db5d\",\"deviceInfo\":\"{\\\"system\\\":\\\"iOS 15\\\",\\\"brand\\\":\\\"iPhone\\\",\\\"model\\\":\\\"iPhone 15 Pro\\\",\\\"version\\\":\\\"6.6.3\\\",\\\"SDKVersion\\\":\\\"3.46.0\\\",\\\"appName\\\":\\\"\\\"}\"}' \\\r\n  -H 'maappid: ttf82e8e93671aa01301' \\\r\n  -H 'page-path: pages/centerpage/index' \\\r\n  -H 'user-agent: Mozilla/5.0 (iPhone; CPU iPhone OS 13_2_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.0.3 Mobile/15E148 Safari/604.1 BytedanceWebview/d8a21c6 Aweme/15.9.0 Mobile ToutiaoMicroApp/2.8.0.12 @byted/miniprogram-ide' \\\r\n  -H 'referer: https://tmaservice.developer.toutiao.com/?appid=ttf82e8e93671aa01301&version=1.0.0' \\\r\n  --compressed"
+			},
+			"response": []
+		},
+		{
+			"name": "订单总数 Copy",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "content-type",
+						"value": "application/json;charset=UTF-8"
+					},
+					{
+						"key": "accept",
+						"value": "application/json, text/plain, */*"
+					},
+					{
+						"key": "authorization",
+						"value": "Bearer f70d0b2f0297021ccbe0f861da9d7db6"
+					},
+					{
+						"key": "app-info",
+						"value": "{\"ppmjVersion\":\"1.0.0\",\"platform\":\"toutiao\",\"requestId\":\"8cd8de84a0176317ff7e27f8d9797591\",\"deviceInfo\":\"{\\\"system\\\":\\\"iOS 15\\\",\\\"brand\\\":\\\"iPhone\\\",\\\"model\\\":\\\"iPhone 15 Pro\\\",\\\"version\\\":\\\"6.6.3\\\",\\\"SDKVersion\\\":\\\"3.46.0\\\",\\\"appName\\\":\\\"\\\"}\"}"
+					},
+					{
+						"key": "maappid",
+						"value": "ttf82e8e93671aa01301"
+					},
+					{
+						"key": "page-path",
+						"value": "pages/centerpage/index"
+					},
+					{
+						"key": "user-agent",
+						"value": "Mozilla/5.0 (iPhone; CPU iPhone OS 13_2_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.0.3 Mobile/15E148 Safari/604.1 BytedanceWebview/d8a21c6 Aweme/15.9.0 Mobile ToutiaoMicroApp/2.8.0.12 @byted/miniprogram-ide"
+					},
+					{
+						"key": "referer",
+						"value": "https://tmaservice.developer.toutiao.com/?appid=ttf82e8e93671aa01301&version=1.0.0"
+					}
+				],
+				"url": {
+					"raw": "https://haier-dy-api.paopaomj.com.cn/order/statistic?maAppId=ttf82e8e93671aa01301",
+					"protocol": "https",
+					"host": [
+						"haier-dy-api",
+						"paopaomj",
+						"com",
+						"cn"
+					],
+					"path": [
+						"order",
+						"statistic"
+					],
+					"query": [
+						{
+							"key": "maAppId",
+							"value": "ttf82e8e93671aa01301"
+						}
+					]
+				},
+				"description": "Generated from cURL: curl 'https://haier-dy-api.paopaomj.com.cn/order/statistic?maAppId=ttf82e8e93671aa01301' \\\r\n  -H 'content-type: application/json;charset=UTF-8' \\\r\n  -H 'accept: application/json, text/plain, */*' \\\r\n  -H 'authorization: Bearer f70d0b2f0297021ccbe0f861da9d7db6' \\\r\n  -H 'app-info: {\"ppmjVersion\":\"1.0.0\",\"platform\":\"toutiao\",\"requestId\":\"8cd8de84a0176317ff7e27f8d9797591\",\"deviceInfo\":\"{\\\"system\\\":\\\"iOS 15\\\",\\\"brand\\\":\\\"iPhone\\\",\\\"model\\\":\\\"iPhone 15 Pro\\\",\\\"version\\\":\\\"6.6.3\\\",\\\"SDKVersion\\\":\\\"3.46.0\\\",\\\"appName\\\":\\\"\\\"}\"}' \\\r\n  -H 'maappid: ttf82e8e93671aa01301' \\\r\n  -H 'page-path: pages/centerpage/index' \\\r\n  -H 'user-agent: Mozilla/5.0 (iPhone; CPU iPhone OS 13_2_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.0.3 Mobile/15E148 Safari/604.1 BytedanceWebview/d8a21c6 Aweme/15.9.0 Mobile ToutiaoMicroApp/2.8.0.12 @byted/miniprogram-ide' \\\r\n  -H 'referer: https://tmaservice.developer.toutiao.com/?appid=ttf82e8e93671aa01301&version=1.0.0' \\\r\n  --compressed"
+			},
+			"response": []
+		},
+		{
+			"name": "抖音门店列表 Copy",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "content-type",
+						"value": "application/json;charset=UTF-8"
+					},
+					{
+						"key": "accept",
+						"value": "application/json, text/plain, */*"
+					},
+					{
+						"key": "authorization",
+						"value": "Bearer f70d0b2f0297021ccbe0f861da9d7db6"
+					},
+					{
+						"key": "app-info",
+						"value": "{\"ppmjVersion\":\"1.0.0\",\"platform\":\"toutiao\",\"requestId\":\"0ff24ce6b01f62dde06e2e2b1494e527\",\"deviceInfo\":\"{\\\"system\\\":\\\"iOS 15\\\",\\\"brand\\\":\\\"iPhone\\\",\\\"model\\\":\\\"iPhone 15 Pro\\\",\\\"version\\\":\\\"6.6.3\\\",\\\"SDKVersion\\\":\\\"3.46.0\\\",\\\"appName\\\":\\\"\\\"}\"}"
+					},
+					{
+						"key": "maappid",
+						"value": "ttf82e8e93671aa01301"
+					},
+					{
+						"key": "page-path",
+						"value": "pages/shoppage/index"
+					},
+					{
+						"key": "user-agent",
+						"value": "Mozilla/5.0 (iPhone; CPU iPhone OS 13_2_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.0.3 Mobile/15E148 Safari/604.1 BytedanceWebview/d8a21c6 Aweme/15.9.0 Mobile ToutiaoMicroApp/2.8.0.12 @byted/miniprogram-ide"
+					},
+					{
+						"key": "referer",
+						"value": "https://tmaservice.developer.toutiao.com/?appid=ttf82e8e93671aa01301&version=1.0.0"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"page\":1,\"per-page\":10,\"country\":0,\"latitude\":\"23.1565\",\"longitude\":\"113.3894\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://haier-dy-api.paopaomj.com.cn/shop/dy-shop-list?maAppId=ttf82e8e93671aa01301",
+					"protocol": "https",
+					"host": [
+						"haier-dy-api",
+						"paopaomj",
+						"com",
+						"cn"
+					],
+					"path": [
+						"shop",
+						"dy-shop-list"
+					],
+					"query": [
+						{
+							"key": "maAppId",
+							"value": "ttf82e8e93671aa01301"
+						}
+					]
+				},
+				"description": "Generated from cURL: curl 'https://haier-dy-api.paopaomj.com.cn/shop/dy-shop-list?maAppId=ttf82e8e93671aa01301' \\\r\n  -H 'content-type: application/json;charset=UTF-8' \\\r\n  -H 'accept: application/json, text/plain, */*' \\\r\n  -H 'authorization: Bearer f70d0b2f0297021ccbe0f861da9d7db6' \\\r\n  -H 'app-info: {\"ppmjVersion\":\"1.0.0\",\"platform\":\"toutiao\",\"requestId\":\"0ff24ce6b01f62dde06e2e2b1494e527\",\"deviceInfo\":\"{\\\"system\\\":\\\"iOS 15\\\",\\\"brand\\\":\\\"iPhone\\\",\\\"model\\\":\\\"iPhone 15 Pro\\\",\\\"version\\\":\\\"6.6.3\\\",\\\"SDKVersion\\\":\\\"3.46.0\\\",\\\"appName\\\":\\\"\\\"}\"}' \\\r\n  -H 'maappid: ttf82e8e93671aa01301' \\\r\n  -H 'page-path: pages/shoppage/index' \\\r\n  -H 'user-agent: Mozilla/5.0 (iPhone; CPU iPhone OS 13_2_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.0.3 Mobile/15E148 Safari/604.1 BytedanceWebview/d8a21c6 Aweme/15.9.0 Mobile ToutiaoMicroApp/2.8.0.12 @byted/miniprogram-ide' \\\r\n  -H 'referer: https://tmaservice.developer.toutiao.com/?appid=ttf82e8e93671aa01301&version=1.0.0' \\\r\n  --data-raw '{\"page\":1,\"per-page\":10,\"country\":0,\"latitude\":\"23.1565\",\"longitude\":\"113.3894\"}' \\\r\n  --compressed"
+			},
+			"response": []
+		},
+		{
+			"name": "查询单个门店 Copy",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "content-type",
+						"value": "application/json;charset=UTF-8"
+					},
+					{
+						"key": "accept",
+						"value": "application/json, text/plain, */*"
+					},
+					{
+						"key": "authorization",
+						"value": "Bearer f70d0b2f0297021ccbe0f861da9d7db6"
+					},
+					{
+						"key": "app-info",
+						"value": "{\"ppmjVersion\":\"1.0.0\",\"platform\":\"toutiao\",\"requestId\":\"c4149a7da280a243ea816b2eb2c69eba\",\"deviceInfo\":\"{\\\"system\\\":\\\"iOS 15\\\",\\\"brand\\\":\\\"iPhone\\\",\\\"model\\\":\\\"iPhone 15 Pro\\\",\\\"version\\\":\\\"6.6.3\\\",\\\"SDKVersion\\\":\\\"3.46.0\\\",\\\"appName\\\":\\\"\\\"}\"}"
+					},
+					{
+						"key": "maappid",
+						"value": "ttf82e8e93671aa01301"
+					},
+					{
+						"key": "page-path",
+						"value": "packageF/pages/shop/select"
+					},
+					{
+						"key": "user-agent",
+						"value": "Mozilla/5.0 (iPhone; CPU iPhone OS 13_2_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.0.3 Mobile/15E148 Safari/604.1 BytedanceWebview/d8a21c6 Aweme/15.9.0 Mobile ToutiaoMicroApp/2.8.0.12 @byted/miniprogram-ide"
+					},
+					{
+						"key": "referer",
+						"value": "https://tmaservice.developer.toutiao.com/?appid=ttf82e8e93671aa01301&version=1.0.0"
+					}
+				],
+				"url": {
+					"raw": "https://haier-dy-api.paopaomj.com.cn/product/dy-detail-shop?page=1&per-page=10&productId=7475167938127972402&typeSelect=2&country=0&latitude=23.1565&longitude=113.3894&maAppId=ttf82e8e93671aa01301",
+					"protocol": "https",
+					"host": [
+						"haier-dy-api",
+						"paopaomj",
+						"com",
+						"cn"
+					],
+					"path": [
+						"product",
+						"dy-detail-shop"
+					],
+					"query": [
+						{
+							"key": "page",
+							"value": "1"
+						},
+						{
+							"key": "per-page",
+							"value": "10"
+						},
+						{
+							"key": "productId",
+							"value": "7475167938127972402"
+						},
+						{
+							"key": "typeSelect",
+							"value": "2"
+						},
+						{
+							"key": "country",
+							"value": "0"
+						},
+						{
+							"key": "latitude",
+							"value": "23.1565"
+						},
+						{
+							"key": "longitude",
+							"value": "113.3894"
+						},
+						{
+							"key": "maAppId",
+							"value": "ttf82e8e93671aa01301"
+						}
+					]
+				},
+				"description": "Generated from cURL: curl 'https://haier-dy-api.paopaomj.com.cn/product/dy-detail-shop?page=1&per-page=10&productId=7475167938127972402&typeSelect=2&country=0&latitude=23.1565&longitude=113.3894&maAppId=ttf82e8e93671aa01301' \\\r\n  -H 'content-type: application/json;charset=UTF-8' \\\r\n  -H 'accept: application/json, text/plain, */*' \\\r\n  -H 'authorization: Bearer f70d0b2f0297021ccbe0f861da9d7db6' \\\r\n  -H 'app-info: {\"ppmjVersion\":\"1.0.0\",\"platform\":\"toutiao\",\"requestId\":\"c4149a7da280a243ea816b2eb2c69eba\",\"deviceInfo\":\"{\\\"system\\\":\\\"iOS 15\\\",\\\"brand\\\":\\\"iPhone\\\",\\\"model\\\":\\\"iPhone 15 Pro\\\",\\\"version\\\":\\\"6.6.3\\\",\\\"SDKVersion\\\":\\\"3.46.0\\\",\\\"appName\\\":\\\"\\\"}\"}' \\\r\n  -H 'maappid: ttf82e8e93671aa01301' \\\r\n  -H 'page-path: packageF/pages/shop/select' \\\r\n  -H 'user-agent: Mozilla/5.0 (iPhone; CPU iPhone OS 13_2_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.0.3 Mobile/15E148 Safari/604.1 BytedanceWebview/d8a21c6 Aweme/15.9.0 Mobile ToutiaoMicroApp/2.8.0.12 @byted/miniprogram-ide' \\\r\n  -H 'referer: https://tmaservice.developer.toutiao.com/?appid=ttf82e8e93671aa01301&version=1.0.0' \\\r\n  --compressed"
+			},
+			"response": []
+		},
+		{
+			"name": "门店区域 Copy",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "content-type",
+						"value": "application/json;charset=UTF-8"
+					},
+					{
+						"key": "accept",
+						"value": "application/json, text/plain, */*"
+					},
+					{
+						"key": "authorization",
+						"value": "Bearer f70d0b2f0297021ccbe0f861da9d7db6"
+					},
+					{
+						"key": "app-info",
+						"value": "{\"ppmjVersion\":\"1.0.0\",\"platform\":\"toutiao\",\"requestId\":\"2d32cb42a0112508926426371f7234e5\",\"deviceInfo\":\"{\\\"system\\\":\\\"iOS 15\\\",\\\"brand\\\":\\\"iPhone\\\",\\\"model\\\":\\\"iPhone 15 Pro\\\",\\\"version\\\":\\\"6.6.3\\\",\\\"SDKVersion\\\":\\\"3.46.0\\\",\\\"appName\\\":\\\"\\\"}\"}"
+					},
+					{
+						"key": "maappid",
+						"value": "ttf82e8e93671aa01301"
+					},
+					{
+						"key": "page-path",
+						"value": "pages/shoppage/index"
+					},
+					{
+						"key": "user-agent",
+						"value": "Mozilla/5.0 (iPhone; CPU iPhone OS 13_2_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.0.3 Mobile/15E148 Safari/604.1 BytedanceWebview/d8a21c6 Aweme/15.9.0 Mobile ToutiaoMicroApp/2.8.0.12 @byted/miniprogram-ide"
+					},
+					{
+						"key": "referer",
+						"value": "https://tmaservice.developer.toutiao.com/?appid=ttf82e8e93671aa01301&version=1.0.0"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"page\":1,\"per-page\":10,\"country\":0,\"province\":2075,\"city\":2076,\"latitude\":\"23.1565\",\"longitude\":\"113.3894\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://haier-dy-api.paopaomj.com.cn/shop/dy-shop-list?maAppId=ttf82e8e93671aa01301",
+					"protocol": "https",
+					"host": [
+						"haier-dy-api",
+						"paopaomj",
+						"com",
+						"cn"
+					],
+					"path": [
+						"shop",
+						"dy-shop-list"
+					],
+					"query": [
+						{
+							"key": "maAppId",
+							"value": "ttf82e8e93671aa01301"
+						}
+					]
+				},
+				"description": "Generated from cURL: curl 'https://haier-dy-api.paopaomj.com.cn/shop/dy-shop-list?maAppId=ttf82e8e93671aa01301' \\\r\n  -H 'content-type: application/json;charset=UTF-8' \\\r\n  -H 'accept: application/json, text/plain, */*' \\\r\n  -H 'authorization: Bearer f70d0b2f0297021ccbe0f861da9d7db6' \\\r\n  -H 'app-info: {\"ppmjVersion\":\"1.0.0\",\"platform\":\"toutiao\",\"requestId\":\"2d32cb42a0112508926426371f7234e5\",\"deviceInfo\":\"{\\\"system\\\":\\\"iOS 15\\\",\\\"brand\\\":\\\"iPhone\\\",\\\"model\\\":\\\"iPhone 15 Pro\\\",\\\"version\\\":\\\"6.6.3\\\",\\\"SDKVersion\\\":\\\"3.46.0\\\",\\\"appName\\\":\\\"\\\"}\"}' \\\r\n  -H 'maappid: ttf82e8e93671aa01301' \\\r\n  -H 'page-path: pages/shoppage/index' \\\r\n  -H 'user-agent: Mozilla/5.0 (iPhone; CPU iPhone OS 13_2_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.0.3 Mobile/15E148 Safari/604.1 BytedanceWebview/d8a21c6 Aweme/15.9.0 Mobile ToutiaoMicroApp/2.8.0.12 @byted/miniprogram-ide' \\\r\n  -H 'referer: https://tmaservice.developer.toutiao.com/?appid=ttf82e8e93671aa01301&version=1.0.0' \\\r\n  --data-raw '{\"page\":1,\"per-page\":10,\"country\":0,\"province\":2075,\"city\":2076,\"latitude\":\"23.1565\",\"longitude\":\"113.3894\"}' \\\r\n  --compressed"
+			},
+			"response": []
+		},
+		{
+			"name": "创建订单 Copy",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "content-type",
+						"value": "application/json;charset=UTF-8"
+					},
+					{
+						"key": "accept",
+						"value": "application/json, text/plain, */*"
+					},
+					{
+						"key": "authorization",
+						"value": "Bearer f70d0b2f0297021ccbe0f861da9d7db6"
+					},
+					{
+						"key": "app-info",
+						"value": "{\"ppmjVersion\":\"1.0.0\",\"platform\":\"toutiao\",\"requestId\":\"efac6c1e860b31bd4cc56bc14baacd0b\",\"deviceInfo\":\"{\\\"system\\\":\\\"iOS 15\\\",\\\"brand\\\":\\\"iPhone\\\",\\\"model\\\":\\\"iPhone 15 Pro\\\",\\\"version\\\":\\\"6.6.3\\\",\\\"SDKVersion\\\":\\\"3.46.0\\\",\\\"appName\\\":\\\"\\\"}\"}"
+					},
+					{
+						"key": "maappid",
+						"value": "ttf82e8e93671aa01301"
+					},
+					{
+						"key": "page-path",
+						"value": "packageF/pages/order/submitOrder"
+					},
+					{
+						"key": "user-agent",
+						"value": "Mozilla/5.0 (iPhone; CPU iPhone OS 13_2_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.0.3 Mobile/15E148 Safari/604.1 BytedanceWebview/d8a21c6 Aweme/15.9.0 Mobile ToutiaoMicroApp/2.8.0.12 @byted/miniprogram-ide"
+					},
+					{
+						"key": "referer",
+						"value": "https://tmaservice.developer.toutiao.com/?appid=ttf82e8e93671aa01301&version=1.0.0"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"goodsList\":[{\"quantity\":1,\"price\":900,\"goodsName\":\"9代10元压测专用\",\"goodsPhoto\":\"https://haier-image-uat.boluojia.site/uploads/ppmj_titktok/product/202502/origin_2025022591033174045085867bd2c2a7a6405.68269872.png?x-oss-process=image/resize,m_lfit,w_750\",\"goodsId\":\"7475167938127972402\",\"goodsType\":1,\"discountAmount\":0,\"activityId\":\"289246073655427072\",\"couponTemplateId\":\"289246073650216960\",\"hierarchy\":10,\"initiatorId\":\"N01104168\",\"initiatorName\":\"数字用户小微\",\"activityName\":\"9元代10元压测专用\"}],\"note\":\"\",\"payment\":{\"totalAmount\":900,\"totalDiscountAmount\":0},\"discountInfo\":{\"type\":2,\"detail\":{\"orderDiscount\":{\"goodsTotalDiscountAmount\":0,\"marketingInfo\":[],\"orderTotalDiscountAmount\":0},\"goodsDiscount\":[{\"goodsId\":\"7475167938127972402\",\"marketingInfo\":[],\"quantity\":1,\"skuId\":\"7475167938127972402\",\"totalAmount\":900,\"totalDiscountAmount\":0}],\"itemDiscount\":[{\"goodsId\":\"7475167938127972402\",\"marketingInfo\":[],\"skuId\":\"7475167938127972402\",\"totalAmount\":900,\"totalDiscountAmount\":0}]},\"useMergedMarketingApi\":true}}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://haier-dy-api.paopaomj.com.cn/order/create?maAppId=ttf82e8e93671aa01301",
+					"protocol": "https",
+					"host": [
+						"haier-dy-api",
+						"paopaomj",
+						"com",
+						"cn"
+					],
+					"path": [
+						"order",
+						"create"
+					],
+					"query": [
+						{
+							"key": "maAppId",
+							"value": "ttf82e8e93671aa01301"
+						}
+					]
+				},
+				"description": "Generated from cURL: curl 'https://haier-dy-api.paopaomj.com.cn/order/create?maAppId=ttf82e8e93671aa01301' \\\r\n  -H 'content-type: application/json;charset=UTF-8' \\\r\n  -H 'accept: application/json, text/plain, */*' \\\r\n  -H 'authorization: Bearer f70d0b2f0297021ccbe0f861da9d7db6' \\\r\n  -H 'app-info: {\"ppmjVersion\":\"1.0.0\",\"platform\":\"toutiao\",\"requestId\":\"efac6c1e860b31bd4cc56bc14baacd0b\",\"deviceInfo\":\"{\\\"system\\\":\\\"iOS 15\\\",\\\"brand\\\":\\\"iPhone\\\",\\\"model\\\":\\\"iPhone 15 Pro\\\",\\\"version\\\":\\\"6.6.3\\\",\\\"SDKVersion\\\":\\\"3.46.0\\\",\\\"appName\\\":\\\"\\\"}\"}' \\\r\n  -H 'maappid: ttf82e8e93671aa01301' \\\r\n  -H 'page-path: packageF/pages/order/submitOrder' \\\r\n  -H 'user-agent: Mozilla/5.0 (iPhone; CPU iPhone OS 13_2_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.0.3 Mobile/15E148 Safari/604.1 BytedanceWebview/d8a21c6 Aweme/15.9.0 Mobile ToutiaoMicroApp/2.8.0.12 @byted/miniprogram-ide' \\\r\n  -H 'referer: https://tmaservice.developer.toutiao.com/?appid=ttf82e8e93671aa01301&version=1.0.0' \\\r\n  --data-raw '{\"goodsList\":[{\"quantity\":1,\"price\":900,\"goodsName\":\"9代10元压测专用\",\"goodsPhoto\":\"https://haier-image-uat.boluojia.site/uploads/ppmj_titktok/product/202502/origin_2025022591033174045085867bd2c2a7a6405.68269872.png?x-oss-process=image/resize,m_lfit,w_750\",\"goodsId\":\"7475167938127972402\",\"goodsType\":1,\"discountAmount\":0,\"activityId\":\"289246073655427072\",\"couponTemplateId\":\"289246073650216960\",\"hierarchy\":10,\"initiatorId\":\"N01104168\",\"initiatorName\":\"数字用户小微\",\"activityName\":\"9元代10元压测专用\"}],\"note\":\"\",\"payment\":{\"totalAmount\":900,\"totalDiscountAmount\":0},\"discountInfo\":{\"type\":2,\"detail\":{\"orderDiscount\":{\"goodsTotalDiscountAmount\":0,\"marketingInfo\":[],\"orderTotalDiscountAmount\":0},\"goodsDiscount\":[{\"goodsId\":\"7475167938127972402\",\"marketingInfo\":[],\"quantity\":1,\"skuId\":\"7475167938127972402\",\"totalAmount\":900,\"totalDiscountAmount\":0}],\"itemDiscount\":[{\"goodsId\":\"7475167938127972402\",\"marketingInfo\":[],\"skuId\":\"7475167938127972402\",\"totalAmount\":900,\"totalDiscountAmount\":0}]},\"useMergedMarketingApi\":true}}' \\\r\n  --compressed"
+			},
+			"response": []
+		},
+		{
+			"name": "我的订单全部 Copy",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "content-type",
+						"value": "application/json;charset=UTF-8"
+					},
+					{
+						"key": "accept",
+						"value": "application/json, text/plain, */*"
+					},
+					{
+						"key": "authorization",
+						"value": "Bearer f70d0b2f0297021ccbe0f861da9d7db6"
+					},
+					{
+						"key": "app-info",
+						"value": "{\"ppmjVersion\":\"1.0.0\",\"platform\":\"toutiao\",\"requestId\":\"ad75684c61fd8317410da5f0275564e5\",\"deviceInfo\":\"{\\\"system\\\":\\\"iOS 15\\\",\\\"brand\\\":\\\"iPhone\\\",\\\"model\\\":\\\"iPhone 15 Pro\\\",\\\"version\\\":\\\"6.6.3\\\",\\\"SDKVersion\\\":\\\"3.46.0\\\",\\\"appName\\\":\\\"\\\"}\"}"
+					},
+					{
+						"key": "maappid",
+						"value": "ttf82e8e93671aa01301"
+					},
+					{
+						"key": "page-path",
+						"value": "packageA/pages/order/index"
+					},
+					{
+						"key": "user-agent",
+						"value": "Mozilla/5.0 (iPhone; CPU iPhone OS 13_2_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.0.3 Mobile/15E148 Safari/604.1 BytedanceWebview/d8a21c6 Aweme/15.9.0 Mobile ToutiaoMicroApp/2.8.0.12 @byted/miniprogram-ide"
+					},
+					{
+						"key": "referer",
+						"value": "https://tmaservice.developer.toutiao.com/?appid=ttf82e8e93671aa01301&version=1.0.0"
+					}
+				],
+				"url": {
+					"raw": "https://haier-dy-api.paopaomj.com.cn/order/list?page=1&per-page=10&status=-1&maAppId=ttf82e8e93671aa01301",
+					"protocol": "https",
+					"host": [
+						"haier-dy-api",
+						"paopaomj",
+						"com",
+						"cn"
+					],
+					"path": [
+						"order",
+						"list"
+					],
+					"query": [
+						{
+							"key": "page",
+							"value": "1"
+						},
+						{
+							"key": "per-page",
+							"value": "10"
+						},
+						{
+							"key": "status",
+							"value": "-1"
+						},
+						{
+							"key": "maAppId",
+							"value": "ttf82e8e93671aa01301"
+						}
+					]
+				},
+				"description": "Generated from cURL: curl 'https://haier-dy-api.paopaomj.com.cn/order/list?page=1&per-page=10&status=-1&maAppId=ttf82e8e93671aa01301' \\\r\n  -H 'content-type: application/json;charset=UTF-8' \\\r\n  -H 'accept: application/json, text/plain, */*' \\\r\n  -H 'authorization: Bearer f70d0b2f0297021ccbe0f861da9d7db6' \\\r\n  -H 'app-info: {\"ppmjVersion\":\"1.0.0\",\"platform\":\"toutiao\",\"requestId\":\"ad75684c61fd8317410da5f0275564e5\",\"deviceInfo\":\"{\\\"system\\\":\\\"iOS 15\\\",\\\"brand\\\":\\\"iPhone\\\",\\\"model\\\":\\\"iPhone 15 Pro\\\",\\\"version\\\":\\\"6.6.3\\\",\\\"SDKVersion\\\":\\\"3.46.0\\\",\\\"appName\\\":\\\"\\\"}\"}' \\\r\n  -H 'maappid: ttf82e8e93671aa01301' \\\r\n  -H 'page-path: packageA/pages/order/index' \\\r\n  -H 'user-agent: Mozilla/5.0 (iPhone; CPU iPhone OS 13_2_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.0.3 Mobile/15E148 Safari/604.1 BytedanceWebview/d8a21c6 Aweme/15.9.0 Mobile ToutiaoMicroApp/2.8.0.12 @byted/miniprogram-ide' \\\r\n  -H 'referer: https://tmaservice.developer.toutiao.com/?appid=ttf82e8e93671aa01301&version=1.0.0' \\\r\n  --compressed"
+			},
+			"response": []
+		},
+		{
+			"name": "待使用 Copy",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "content-type",
+						"value": "application/json;charset=UTF-8"
+					},
+					{
+						"key": "accept",
+						"value": "application/json, text/plain, */*"
+					},
+					{
+						"key": "authorization",
+						"value": "Bearer f70d0b2f0297021ccbe0f861da9d7db6"
+					},
+					{
+						"key": "app-info",
+						"value": "{\"ppmjVersion\":\"1.0.0\",\"platform\":\"toutiao\",\"requestId\":\"47722eac1c4d647896587df424636f9a\",\"deviceInfo\":\"{\\\"system\\\":\\\"iOS 15\\\",\\\"brand\\\":\\\"iPhone\\\",\\\"model\\\":\\\"iPhone 15 Pro\\\",\\\"version\\\":\\\"6.6.3\\\",\\\"SDKVersion\\\":\\\"3.46.0\\\",\\\"appName\\\":\\\"\\\"}\"}"
+					},
+					{
+						"key": "maappid",
+						"value": "ttf82e8e93671aa01301"
+					},
+					{
+						"key": "page-path",
+						"value": "packageA/pages/order/index"
+					},
+					{
+						"key": "user-agent",
+						"value": "Mozilla/5.0 (iPhone; CPU iPhone OS 13_2_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.0.3 Mobile/15E148 Safari/604.1 BytedanceWebview/d8a21c6 Aweme/15.9.0 Mobile ToutiaoMicroApp/2.8.0.12 @byted/miniprogram-ide"
+					},
+					{
+						"key": "referer",
+						"value": "https://tmaservice.developer.toutiao.com/?appid=ttf82e8e93671aa01301&version=1.0.0"
+					}
+				],
+				"url": {
+					"raw": "https://haier-dy-api.paopaomj.com.cn/order/list?page=1&per-page=10&status=1&maAppId=ttf82e8e93671aa01301",
+					"protocol": "https",
+					"host": [
+						"haier-dy-api",
+						"paopaomj",
+						"com",
+						"cn"
+					],
+					"path": [
+						"order",
+						"list"
+					],
+					"query": [
+						{
+							"key": "page",
+							"value": "1"
+						},
+						{
+							"key": "per-page",
+							"value": "10"
+						},
+						{
+							"key": "status",
+							"value": "1"
+						},
+						{
+							"key": "maAppId",
+							"value": "ttf82e8e93671aa01301"
+						}
+					]
+				},
+				"description": "Generated from cURL: curl 'https://haier-dy-api.paopaomj.com.cn/order/list?page=1&per-page=10&status=1&maAppId=ttf82e8e93671aa01301' \\\r\n  -H 'content-type: application/json;charset=UTF-8' \\\r\n  -H 'accept: application/json, text/plain, */*' \\\r\n  -H 'authorization: Bearer f70d0b2f0297021ccbe0f861da9d7db6' \\\r\n  -H 'app-info: {\"ppmjVersion\":\"1.0.0\",\"platform\":\"toutiao\",\"requestId\":\"47722eac1c4d647896587df424636f9a\",\"deviceInfo\":\"{\\\"system\\\":\\\"iOS 15\\\",\\\"brand\\\":\\\"iPhone\\\",\\\"model\\\":\\\"iPhone 15 Pro\\\",\\\"version\\\":\\\"6.6.3\\\",\\\"SDKVersion\\\":\\\"3.46.0\\\",\\\"appName\\\":\\\"\\\"}\"}' \\\r\n  -H 'maappid: ttf82e8e93671aa01301' \\\r\n  -H 'page-path: packageA/pages/order/index' \\\r\n  -H 'user-agent: Mozilla/5.0 (iPhone; CPU iPhone OS 13_2_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.0.3 Mobile/15E148 Safari/604.1 BytedanceWebview/d8a21c6 Aweme/15.9.0 Mobile ToutiaoMicroApp/2.8.0.12 @byted/miniprogram-ide' \\\r\n  -H 'referer: https://tmaservice.developer.toutiao.com/?appid=ttf82e8e93671aa01301&version=1.0.0' \\\r\n  --compressed"
+			},
+			"response": []
+		}
+	]
+}

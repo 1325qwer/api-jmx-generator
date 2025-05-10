@@ -1,0 +1,63 @@
+<HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="{{ name }}" enabled="true">
+  {% if body_type == "raw" %}
+  <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+  {% endif %}
+
+  <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+    {% if body_type == "form" %}
+    <collectionProp name="Arguments.arguments">
+      {% for param in params %}
+      <elementProp name="{{ param.key }}" elementType="HTTPArgument">
+        <stringProp name="Argument.name">{{ param.key }}</stringProp>
+        <stringProp name="Argument.value">{{ param.value }}</stringProp>
+        <stringProp name="Argument.metadata">=</stringProp>
+      </elementProp>
+      {% endfor %}
+    </collectionProp>
+    {% elif body_type == "raw" %}
+    <collectionProp name="Arguments.arguments">
+      <elementProp name="body" elementType="HTTPArgument">
+        <boolProp name="HTTPArgument.always_encode">false</boolProp>
+        <stringProp name="Argument.name"/>
+        <stringProp name="Argument.value">{{ body_content }}</stringProp>
+        <stringProp name="Argument.metadata">=</stringProp>
+      </elementProp>
+    </collectionProp>
+    {% else %}
+    <collectionProp name="Arguments.arguments"/>
+    {% endif %}
+  </elementProp>
+
+  <stringProp name="HTTPSampler.domain">{{ domain }}</stringProp>
+  <stringProp name="HTTPSampler.port">{{ port }}</stringProp>
+  <stringProp name="HTTPSampler.protocol">{{ protocol }}</stringProp>
+  <stringProp name="HTTPSampler.path">{{ path }}</stringProp>
+  <stringProp name="HTTPSampler.method">{{ method }}</stringProp>
+  <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+  <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+  <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+</HTTPSamplerProxy>
+
+<hashTree>
+  <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="请求头信息" enabled="true">
+    <collectionProp name="HeaderManager.headers">
+      {% for header in headers %}
+      <elementProp name="{{ header.key }}" elementType="Header">
+        <stringProp name="Header.name">{{ header.key }}</stringProp>
+        <stringProp name="Header.value">{{ header.value }}</stringProp>
+      </elementProp>
+      {% endfor %}
+    </collectionProp>
+  </HeaderManager>
+  <hashTree/>
+
+  {% if extract %}
+  <JSONPostProcessor guiclass="JSONPostProcessorGui" testclass="JSONPostProcessor" testname="提取变量" enabled="true">
+    <stringProp name="JSONPostProcessor.referenceNames">{{ extract.key }}</stringProp>
+    <stringProp name="JSONPostProcessor.jsonPathExpressions">{{ extract.value }}</stringProp>
+    <stringProp name="JSONPostProcessor.match_numbers">1</stringProp>
+    <stringProp name="JSONPostProcessor.defaultValues">NOT_FOUND</stringProp>
+  </JSONPostProcessor>
+  <hashTree/>
+  {% endif %}
+</hashTree>
