@@ -1,0 +1,24 @@
+<HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="用户登录" enabled="true">
+  <stringProp name="HTTPSampler.domain">example.com</stringProp>
+  <stringProp name="HTTPSampler.port"></stringProp>
+  <stringProp name="HTTPSampler.protocol">https</stringProp>
+  <stringProp name="HTTPSampler.path">/api/login</stringProp>
+  <stringProp name="HTTPSampler.method">POST</stringProp>
+  <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+  <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+  <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+  <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+  <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+  <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+    <collectionProp name="Arguments.arguments">
+      <elementProp name="" elementType="HTTPArgument">
+        <boolProp name="HTTPArgument.always_encode">false</boolProp>
+        <stringProp name="Argument.value">{"username": "test_user", "password": "123456"}</stringProp>
+        <stringProp name="Argument.metadata">=</stringProp>
+        <boolProp name="HTTPArgument.use_equals">true</boolProp>
+        <stringProp name="Argument.name"></stringProp>
+      </elementProp>
+    </collectionProp>
+  </elementProp>
+  <stringProp name="HTTPSampler.contentEncoding">utf-8</stringProp>
+</HTTPSamplerProxy>
